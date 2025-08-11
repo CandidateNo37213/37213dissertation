@@ -118,7 +118,8 @@ sem (ownstigma_sum <- estimated_others_stigma_sum PSOSH_sum treatmentgroup sough
     (esteemsum <- ownstigma_sum SSOSH_sum treatmentgroup soughthelpbin) ///
     (gplikely_binary <- SSOSH_sum esteemsu treatmentgroup soughthelpbin), ///
     nocapslatent standardized
-		
+      
+      
 nlcom _b[esteemsum:SSOSH_sum] * _b[gplikely_binary:esteemsum]
 
 
@@ -140,6 +141,7 @@ graph twoway ///
          "Biggest wedge (-16 to -9): n=59 (28.4%) | Medium wedge (-8 to -4): n=62 (29.8%)" ///
          "Small wedge (-3 to -1): n=52 (25.0%) | Zero wedge (0): n=17 (8.2%) | Positive wedge (1+): n=18 (8.7%)" ///
          "Total N=208. Negative values = overestimating public stigma.", size(medsmall))
+
 
 
 
